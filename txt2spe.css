@@ -1,0 +1,541 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    width: 100%;
+}
+.body{
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+                                                 /* NAVIGATION BAR */
+.nann{
+    display: flex;
+    align-items: center;
+}
+.nann h5{
+    font-size: 25px;
+    font-weight: 590;
+    font-family: "Ubuntu Sans", sans-serif;
+}
+.heading{
+    font-family: "Sedgwick Ave Display", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 45px;
+    padding-top: 40px;
+    color: rgb(21, 102, 232);
+}
+.nav{
+    user-select: none;
+    position: relative;
+    bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav img{
+    height: 50px;
+    width: 50px;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 50px;
+    padding-right: 15px;
+}
+.links img{
+    height: 50px;
+    width: 50px;
+}
+                                                 /* FUNTIONING AREA */
+.container{
+    border: 0.3px solid rgba(146, 139, 139, 0.553);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    width: 90%;
+    height: 550px;
+    background-color: azure;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.cont{
+    height: 500px;
+    width: 900px;
+    background-color: rgba(205, 220, 220, 0.402);
+    box-shadow: rgba(133, 132, 132, 0.3) 0px 19px 38px, rgba(125, 123, 123, 0.22) 0px 10px 10px;
+    padding: 20px;
+    border: 0.3px solid rgb(186, 175, 175);
+    border-radius: 30px;
+}
+.voice{
+    user-select: none;
+    width: 100%;
+    height: 40px;
+    border: 0.2px solid rgba(182, 172, 172, 0.514);
+    border-radius: 10px;
+    font-size: 20px;
+    font-family:"Sedgwick Ave Display", cursive;
+    font-weight: 500;
+    color: rgb(125, 89, 72);
+}
+.textarea{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 10px;
+    border: 0.1px solid rgba(182, 172, 172, 0.514);
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+                                        /* AREA OF SETTINGS */
+.edit{
+    user-select: none;
+    height: 500px;
+    width:450px;
+    background-color: rgba(202, 206, 206, 0.24);
+    box-shadow: rgba(133, 132, 132, 0.3) 0px 19px 38px, rgba(125, 123, 123, 0.22) 0px 10px 10px;
+    padding: 20px;
+    border: 0.3px solid rgb(186, 175, 175);
+    border-radius: 30px;
+}
+.edit h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(196, 105, 105);
+    font-size: 35px;
+}
+.pitch{
+    width: 100%;
+    position: relative;
+    top: 50px;
+    padding: 30px;
+}
+.rate{
+    width: 100%;
+    position: relative;
+    top: 50px;
+    padding: 30px;
+}
+.volume{
+    width: 100%;
+    position: relative;
+    top: 50px;
+    padding: 30px;
+}
+label{
+    width: 100%;
+    position: relative;
+    top: 50px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+input[type="range"] {
+    accent-color: coral;
+}
+                                             /* BUTTONS */
+.btn{
+    padding:10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    top: 20px;
+    filter: drop-shadow(15px 15px 15px rgba(0,0,0,0.3))
+}
+.speak{
+    height: 70px;
+    width: 120px;
+    background-color: rgba(207, 162, 130, 0.708);
+    border: none;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+.stop{
+    height: 70px;
+    width: 120px;
+    background-color: rgba(207, 162, 130, 0.708);
+    border: none;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+}
+.burgermenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 5px;
+    height: 30px;
+    width: 100%;
+    display: none;
+    user-select: none;
+    cursor: pointer;
+}
+.bur1{
+    height: 4px;
+    width: 35px;
+    background-color: black;
+    border-radius: 10px;
+}
+.bur2{
+    height: 4px;
+    width: 35px;
+    background-color: black;
+    border-radius: 10px;
+}
+.label{
+    width: 100%;
+    position: relative;
+    top: 10px;
+    height: 100px;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.bur3{
+    height: 4px;
+    width: 35px;
+    background-color: black;
+    border-radius: 10px;
+}
+.all{
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    bottom: 370px;
+    left: 70px;
+    display: none;
+    user-select: none;
+    cursor: pointer;      
+}
+ .display.all{
+    display: block;
+}
+.burgercont{
+    height: 130px;
+    width: 250px;
+    background-color: rgba(160, 178, 178, 0.388);
+    position:static;
+    z-index: 1;
+    border-radius: 20px;
+    padding: 10px;    
+}
+.burpitch{
+    width: 100%;
+    position: relative;
+    top: 0px;
+    padding: 0px;
+}
+.burrate{
+    width: 100%;
+    position: relative;
+    top: 0px;
+    padding: 0px;
+}
+.burvolume{
+    width: 100%;
+    position: relative;
+    top: 0px;
+    padding: 0px;
+}
+.burgercont label{
+    width: 100%;
+    position: relative;
+    top: 0px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+input[type="range"] {
+    accent-color: coral;
+}
+
+                                        /* MEDIA QUERRY */
+@media screen and (min-width:1025px) and (max-width:1200px) {
+    .container{
+        gap: 60px;
+        width: 90%;
+        height: 550px;
+        padding: 20px;
+    }
+    .cont{
+        height: 450px;
+        width: 900px;
+    }
+    .textarea{
+        height: 350px;
+    }
+    .edit{
+        height: 450px;
+    }
+    .heading{
+        font-size: 35px;
+    }
+    .nav{
+        bottom: 20px;
+    }
+    .pitch,.rate,.volume{
+        width: 100%;
+        position: relative;
+        top: 10px;
+        padding: 20px;
+    }
+    label{
+        top: 10px;
+        font-size: 20px;
+    }
+    .btn{
+        top: 30px;
+    }
+    .voice{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .container{
+        gap: 30px;
+        width: 90%;
+        height: 550px;
+        padding: 20px;
+    }
+    .cont{
+        height: 450px;
+        width: 800px;
+
+    }
+    .textarea{
+        height: 350px;
+    }
+    .edit{
+        height: 450px;
+        width: 220px;
+    }
+    .heading{
+        font-size: 30px;
+        text-align: center;
+    }
+    .nav{
+        bottom: 10px;
+    }
+    .pitch,.rate,.volume{
+        width: 100%;
+        position: relative;
+        top: 10px;
+        padding: 15px;
+    }
+    label{
+        top: 10px;
+        font-size: 15px;
+    }
+    .speak,.stop{
+        height: 50px;
+        width: 800px;
+        font-size: 18px;
+    }
+    .btn{
+        top: 60px;
+    }
+    .voice{
+        font-size: 15px;
+    } 
+}
+@media screen and (min-width:481px) and (max-width:768px) {
+    .container{
+        gap: 0px;
+        width: 100%;
+        height: 500px;
+        padding: 5px;
+        flex-direction: column;
+    }
+    .cont{
+        height: 360px;
+        width: 450px;
+    }
+    .textarea{
+        height: 260px;
+        width: 400px;
+    }
+    .edit{
+        height: 70px;
+        width: 300px;
+        padding-top: 0px;
+    }
+    .edit h1,.edit label,.edit input{
+        display: none;
+    }
+    .nav{
+        bottom: 30px;
+        height: 100px;
+    }
+    .speak,.stop{
+        height: 50px;
+        width: 300px;
+        font-size: 18px;
+    }
+    .btn{
+        top: 0px;
+    }
+    .links{
+        gap: 30px;
+        padding-right: 15px;
+    }
+    .voice{
+        font-size: 15px;
+    }
+    .links img{
+        height:30px;
+        width: 30px;
+    }
+    .heading{
+        font-size: 25px;
+        padding-top: 80px;
+        text-align: center;
+    } 
+    .burgermenu{
+        display: flex; 
+        padding-left: 5px;
+    }
+    .burgercont input[type="range"] {
+        accent-color: coral;
+    }
+
+}
+@media screen and (min-width:300px) and (max-width:480px) {
+    .container{
+        gap: 0px;
+        width: 100%;
+        height: 500px;
+        padding: 5px;
+        flex-direction: column;
+    }
+    .cont{
+        height: 360px;
+        width: 300px;
+    }
+    .textarea{
+        height: 260px;
+        width: 250px;
+    }
+    .edit{
+        height: 70px;
+        width: 300px;
+        padding-top: 0px;
+    }
+    .edit h1{
+        display: none;
+    }
+    .nav{
+        bottom: 30px;
+        height: 100px;
+        width: 250px;
+    }
+    .edit input,.edit label{
+        display: none;
+      
+    }
+    .speak,.stop{
+        height: 50px;
+        width: 300px;
+        font-size: 18px;
+    }
+    .btn{
+        top: 0px;
+    }
+    .links{
+        gap: 10px;
+        padding-right: 10px;
+    }
+    .nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .voice{
+        font-size: 15px;
+    }
+    .links img{
+        height:30px;
+        width: 30px;
+    }
+    .heading{
+        text-align: center;
+        font-size: 15px;
+        padding-top: 50px;
+    }
+    .nann h5{
+        font-size: 15px;
+    }
+    .nann img{
+        height: 30px;
+        width: 30px;
+    }
+    .body{
+        width:100%;
+    }
+    .burgermenu{
+        display: flex; 
+        padding-left: 5px;
+    }
+    .burgercont input[type="range"] {
+        accent-color: coral;
+    }
+}
+
+@media screen and (min-width:1201px) and (max-width:1400px)  {
+    .nav{
+        bottom: 10px;
+    }
+    .container{
+        height: 520px;
+        gap: 40px;
+        padding: 30px;
+    }
+    .voice{
+        font-size: 15px;
+    }
+    .cont,.edit{
+        height: 450px;
+    }
+    .textarea{
+        height: 350px;
+    }
+    .pitch,.rate,.volume{
+        width: 100%;
+        position: relative;
+        top: 10px;
+        padding: 20px;
+    }
+    label{
+        top: 10px;
+        font-size: 20px;
+    }
+    .btn{
+        top: 30px;
+    }
+}

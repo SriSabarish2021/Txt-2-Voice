@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sri Sabarish">
+    <meta name="about-Us" content="Im an freenlancing web developer">
+    <link rel="stylesheet" href="txt2spe.css">
+    <title>Text 2 Voice</title>
+</head>
+<body class="body">
+    <!-- NAVBAR -->
+    <nav class="nav">
+        <div class="nann">
+            <img src="voice.png" alt="logo" >
+            <h5>VocalizeIt</h5>
+        </div>
+        <h1 class="heading">
+            Your Text-to-Speech Companion
+        </h1>
+        <div class="links">
+            <a href="https://github.com/SriSabarish2021"  target="_blank"><img src="github-sign.png" alt="github-sign" ></a>
+        <a href="https://www.linkedin.com/in/sri-sabarish-b922222a5/"  target="_blank"><img src="linkedin.png" alt="linkdin"></a>
+        </div>
+    </nav>
+    <!-- CONTAINER -->
+    <div class="container">
+        <div class="burgermenu">
+            <div class="bur1"></div>
+            <div class="bur2"></div>
+            <div class="bur3"></div>
+        </div>
+        <div class="all">
+            <div class="burgercont">
+                <label class="label" for="pitch">PITCH :</label>
+                <input class="burpitch" name="pitch" type="range" min="0.1" max="20" value="1" step="0.3">
+                <label class="label"  for="rate">RATE :</label>
+                <input class="burrate" name="rate" type="range" min="0.1" max="20" value="1" step="0.3">
+                <label class="label" for="volume">VOLUME :</label>
+                <input class="burvolume" name="volume" type="range" min="0" max="1" value="1" step="0.1">
+            </div>
+       </div>
+        <div class="cont">
+            <select class="voice">
+                <option value="">Select an Voice....</option>
+            </select>
+            <textarea class="textarea">Please flow your Ideas...!</textarea>    
+        </div>
+        <div class="edit">
+            <h1 style="text-align: center;">SETTING</h1>
+            <label for="pitch">PITCH :</label>
+            <input class="pitch" name="pitch" type="range" min="0.1" max="20" value="1" step="0.3">
+            <label for="rate">RATE :</label>
+            <input class="rate" name="rate" type="range" min="0.1" max="20" value="1" step="0.3">
+            <label for="volume">VOLUME :</label>
+            <input class="volume" name="volume" type="range" min="0" max="1" value="1" step="0.1">
+            <div class="btn">     
+                <button class="speak">SPEAK</button>
+                <button class="stop">STOP</button>
+            </div>
+        </div>
+    </div>
+    <script src="txt2spe.js"></script>
+</body>
+</html>
